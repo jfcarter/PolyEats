@@ -1,0 +1,38 @@
+List of Complete Features of Android Ultimate Plugin when you buy the paid version
+
+1.  Local Notification - LITE
+2.  Screen Shot and Share Image - LITE
+3.  Share Text - LITE
+4.  Blue tooth communication - PAID
+5.  GPS - PAID
+6.  Speech To Text - PAID
+7.  Text To Speech - PAID
+8.  Immersive Full Screen Mode - LITE
+9.  Voice audio recorder with modify pitch - PAID
+10. Google App indexing - PAID
+11. Get Android package id at Runtime - PAID
+12. Get Android version at Runtime - PAID
+13. Get Battery Life Percentage - PAID
+14. Flash light - PAID
+15. Normal vibration - PAID
+16. Vibration with pattern - PAID
+17. Native loading UI - LITE 
+18. Native Rate my App Popup - LITE
+19. Native Alert Popup - LITE
+20. Native Toast Message - LITE
+21. Get Time - PAID
+
+New Features: version 1.3.8
+
+22. Set One Time Alarm - PAID
+23. Set Repeating Alarm - PAID
+24. Set Alarm with Interval - PAID
+25. Camera - Take Picture using camera and then share - PAID
+26. Image Picker - get image from device and then share - PAID
+27. Get Existing Texture from unity3d and then share - PAID
+28. Download Image from web and then share - PAID
+29. Get Android ID - PAID
+30. Get Telephony Device ID - PAID
+31. Get Telephony Sim Serial Number - PAID
+32. Get Android Advertising ID - PAID
+33. Generate Unique ID - PAID

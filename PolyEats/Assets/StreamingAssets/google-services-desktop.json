@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "748253812632",
+    "firebase_url": "https://broncobytes-35974.firebaseio.com",
+    "project_id": "broncobytes-35974",
+    "storage_bucket": "broncobytes-35974.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:748253812632:android:e2ebd2171fe88825",
+        "android_client_info": {
+          "package_name": "com.polyeats.android"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "748253812632-0u3c7j0ck4rqu7d5j2nsm8plqc0bferr.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAn2_0a9LMqyVymXy8wg69WxdoXSjm-vGw"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

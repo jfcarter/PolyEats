@@ -1,0 +1,3568 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &100100000
+Prefab:
+  m_ObjectHideFlags: 1
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 1548013295827826}
+  m_IsPrefabParent: 1
+--- !u!1 &1330872295280726
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4903978616882296}
+  m_Layer: 0
+  m_Name: GameObject
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &1548013295827826
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4667839013930614}
+  - component: {fileID: 114685889175993474}
+  - component: {fileID: 114440055606648754}
+  - component: {fileID: 114521764103222656}
+  - component: {fileID: 114273311913166346}
+  - component: {fileID: 114602021505546570}
+  - component: {fileID: 114818746587520692}
+  - component: {fileID: 114369369919691654}
+  - component: {fileID: 114991924567370042}
+  - component: {fileID: 114567431345563736}
+  m_Layer: 0
+  m_Name: Map
+  m_TagString: map
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4667839013930614
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1548013295827826}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 4903978616882296}
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &4903978616882296
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1330872295280726}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4667839013930614}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &114273311913166346
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1548013295827826}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ed3c476c58b6b054d9469cbe6c8fa060, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fileCacheLocation: 0
+  fileCacheCustomPath: 
+  fileCacheTilePath: TileCache/{pid}/{mid}/{lbs}/{lng}/{zoom}/{x}/{y}
+  fileCacheUnloadRate: 0.3
+  maxFileCacheSize: 100
+  maxMemoryCacheSize: 10
+  memoryCacheUnloadRate: 0.3
+  useFileCache: 1
+  useMemoryCache: 1
+--- !u!114 &114369369919691654
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1548013295827826}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 09bc75720ebb9334281fd6f9bca069fa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  loc: {x: 0, y: 0}
+--- !u!114 &114440055606648754
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1548013295827826}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a535bd26274b9da4a85dcb372148ce3c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  activeTexture: {fileID: 0}
+  allowAddMarkerByM: 0
+  allowZoom: 1
+  allowUserControl: 1
+  isMapDrag: 0
+  invertTouchZoom: 0
+  zoomInOnDoubleClick: 1
+  zoomMode: 0
+  activeCamera: {fileID: 0}
+  allowAddMarker3DByN: 0
+  allowDefaultMarkerEvents: 1
+  allowCameraControl: 0
+  cameraAdjustTo: 0
+  cameraDistance: 100
+  cameraRotation: {x: 0, y: 0}
+  cameraSpeed: {x: 1, y: 1}
+  default3DMarker: {fileID: 0}
+  marker2DMode: 1
+  marker2DSize: 100
+  markers3D: []
+  marker3DScale: 1
+  maxCameraRotationX: 80
+  originalPosition: {x: 0, y: 0, z: 0}
+  originalScale: {x: 0, y: 0, z: 0}
+  bingAPI: 
+  checkMarker2DVisibility: 0
+  colliderType: 2
+  drawingsGameObject: {fileID: 0}
+  drawingMode: 0
+  drawingShader: {fileID: 4800000, guid: 07fd051d8972c7a4bac96bfa8038d08b, type: 3}
+  elevationZoomRange:
+    max: 20
+    min: 11
+    maxLimit: 20
+    minLimit: 3
+  elevationScale: 1
+  elevationBottomMode: 1
+  elevationResolution: 32
+  elevationMinValue: 0
+  elevationMaxValue: 0
+  lockYScale: 0
+  markerMaterial: {fileID: 0}
+  markerShader: {fileID: 30, guid: 0000000000000000f000000000000000, type: 0}
+  smoothZoom: 1
+  smoothZoomMinScale: -3.4028235e+38
+  smoothZoomMaxScale: 3.4028235e+38
+  smoothZoomStarted: 0
+  tileMaterial: {fileID: 0}
+  tilesetShader: {fileID: 4800000, guid: f65580aa9bbbd7e42b05adab01e1ca2d, type: 3}
+  useElevation: 0
+  yScaleValue: 0
+--- !u!114 &114521764103222656
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1548013295827826}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 80faaef41991a354da8d1235b0f3d125, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  camera2D: {fileID: 0}
+  camera3D: {fileID: 0}
+  tileShader: {fileID: 4800000, guid: f65580aa9bbbd7e42b05adab01e1ca2d, type: 3}
+  CameraChangeTime: 0.5
+--- !u!114 &114567431345563736
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1548013295827826}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b2bdaca23f6289d42a20de1ef2c15439, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  latitude: 0
+  longitude: 0
+--- !u!114 &114602021505546570
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1548013295827826}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 23cad15691a9de6478a78e8f68ae6ad3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  autoStopUpdateOnInput: 1
+  compassThreshold: 8
+  createMarkerInUserPosition: 1
+  disableEmulatorInPublish: 1
+  emulatorCompass: 0
+  emulatorPosition: {x: -117.826515, y: 34.05778}
+  findLocationByIP: 0
+  markerTooltip: 
+  markerType: 0
+  marker2DAlign: 4
+  marker2DTexture: {fileID: 2800000, guid: 019587db7e0141d4c8c93a92b84d1d65, type: 3}
+  marker3DPrefab: {fileID: 100000, guid: 035accde26617884d8915b4fc64b3d70, type: 3}
+  maxPositionCount: 3
+  position: {x: 0, y: 0}
+  restoreAfter: 5
+  trueHeading: 0
+  updatePosition: 0
+  useCompassForMarker: 0
+  useGPSEmulator: 0
+  desiredAccuracy: 10
+  loc: {x: 0, y: 0}
+  updateDistance: 10
+--- !u!114 &114685889175993474
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1548013295827826}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9cf484bb098da8c48973c6e0076a9e35, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  allowRedraw: 1
+  control: {fileID: 0}
+  customProviderURL: http://localhost/{zoom}/{y}/{x}
+  customTrafficProviderURL: http://localhost/{zoom}/{y}/{x}
+  defaultMarkerAlign: 7
+  defaultMarkerTexture: {fileID: 2800000, guid: ea7eb0aa8eaab054a91d4219f9719f63,
+    type: 3}
+  defaultTileTexture: {fileID: 0}
+  dispatchEvents: 1
+  emptyColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+  height: 0
+  labels: 1
+  language: en
+  lockRedraw: 0
+  markers:
+  - label: Building One
+    range:
+      max: 20
+      min: 3
+      maxLimit: 20
+      minLimit: 3
+    _enabled: 1
+    latitude: 34.059593
+    longitude: -117.824208
+    _scale: 1
+    align: 7
+    locked: 0
+    markerColliderRect:
+      serializedVersion: 2
+      x: -0.5
+      y: -0.5
+      width: 1
+      height: 1
+    texture: {fileID: 2800000, guid: ea7eb0aa8eaab054a91d4219f9719f63, type: 3}
+    _rotation: 0
+  - label: College of Agriculture
+    range:
+      max: 20
+      min: 3
+      maxLimit: 20
+      minLimit: 3
+    _enabled: 1
+    latitude: 34.057783
+    longitude: -117.826519
+    _scale: 1
+    align: 7
+    locked: 0
+    markerColliderRect:
+      serializedVersion: 2
+      x: -0.5
+      y: -0.5
+      width: 1
+      height: 1
+    texture: {fileID: 2800000, guid: ea7eb0aa8eaab054a91d4219f9719f63, type: 3}
+    _rotation: 0
+  - label: Science Laboratory
+    range:
+      max: 20
+      min: 3
+      maxLimit: 20
+      minLimit: 3
+    _enabled: 1
+    latitude: 34.057905
+    longitude: -117.82562
+    _scale: 1
+    align: 7
+    locked: 0
+    markerColliderRect:
+      serializedVersion: 2
+      x: -0.5
+      y: -0.5
+      width: 1
+      height: 1
+    texture: {fileID: 2800000, guid: ea7eb0aa8eaab054a91d4219f9719f63, type: 3}
+    _rotation: 0
+  - label: Biotechnology Building
+    range:
+      max: 20
+      min: 3
+      maxLimit: 20
+      minLimit: 3
+    _enabled: 1
+    latitude: 34.057365
+    longitude: -117.825449
+    _scale: 1
+    align: 7
+    locked: 0
+    markerColliderRect:
+      serializedVersion: 2
+      x: -0.5
+      y: -0.5
+      width: 1
+      height: 1
+    texture: {fileID: 2800000, guid: ea7eb0aa8eaab054a91d4219f9719f63, type: 3}
+    _rotation: 0
+  - label: BioTrek Learning Center
+    range:
+      max: 20
+      min: 3
+      maxLimit: 20
+      minLimit: 3
+    _enabled: 1
+    latitude: 34.057223
+    longitude: -117.826079
+    _scale: 1
+    align: 7
+    locked: 0
+    markerColliderRect:
+      serializedVersion: 2
+      x: -0.5
+      y: -0.5
+      width: 1
+      height: 1
+    texture: {fileID: 2800000, guid: ea7eb0aa8eaab054a91d4219f9719f63, type: 3}
+    _rotation: 0
+  - label: College of Letters, Arts and Social Sciences
+    range:
+      max: 20
+      min: 3
+      maxLimit: 20
+      minLimit: 3
+    _enabled: 1
+    latitude: 34.057747
+    longitude: -117.824443
+    _scale: 1
+    align: 7
+    locked: 0
+    markerColliderRect:
+      serializedVersion: 2
+      x: -0.5
+      y: -0.5
+      width: 1
+      height: 1
+    texture: {fileID: 2800000, guid: ea7eb0aa8eaab054a91d4219f9719f63, type: 3}
+    _rotation: 0
+  - label: College of Education and Integrative Studies
+    range:
+      max: 20
+      min: 3
+      maxLimit: 20
+      minLimit: 3
+    _enabled: 1
+    latitude: 34.05858
+    longitude: -117.822801
+    _scale: 1
+    align: 7
+    locked: 0
+    markerColliderRect:
+      serializedVersion: 2
+      x: -0.5
+      y: -0.5
+      width: 1
+      height: 1
+    texture: {fileID: 2800000, guid: ea7eb0aa8eaab054a91d4219f9719f63, type: 3}
+    _rotation: 0
+  - label: College of Environmental Design
+    range:
+      max: 20
+      min: 3
+      maxLimit: 20
+      minLimit: 3
+    _enabled: 1
+    latitude: 34.057075
+    longitude: -117.827378
+    _scale: 1
+    align: 7
+    locked: 0
+    markerColliderRect:
+      serializedVersion: 2
+      x: -0.5
+      y: -0.5
+      width: 1
+      height: 1
+    texture: {fileID: 2800000, guid: ea7eb0aa8eaab054a91d4219f9719f63, type: 3}
+    _rotation: 0
+  - label: College of Science
+    range:
+      max: 20
+      min: 3
+      maxLimit: 20
+      minLimit: 3
+    _enabled: 1
+    latitude: 34.058475
+    longitude: -117.824827
+    _scale: 1
+    align: 7
+    locked: 0
+    markerColliderRect:
+      serializedVersion: 2
+      x: -0.5
+      y: -0.5
+      width: 1
+      height: 1
+    texture: {fileID: 2800000, guid: ea7eb0aa8eaab054a91d4219f9719f63, type: 3}
+    _rotation: 0
+  - label: College of Engineering
+    range:
+      max: 20
+      min: 3
+      maxLimit: 20
+      minLimit: 3
+    _enabled: 1
+    latitude: 34.059167
+    longitude: -117.822255
+    _scale: 1
+    align: 7
+    locked: 0
+    markerColliderRect:
+      serializedVersion: 2
+      x: -0.5
+      y: -0.5
+      width: 1
+      height: 1
+    texture: {fileID: 2800000, guid: ea7eb0aa8eaab054a91d4219f9719f63, type: 3}
+    _rotation: 0
+  - label: Art Department and Engineering Annex
+    range:
+      max: 20
+      min: 3
+      maxLimit: 20
+      minLimit: 3
+    _enabled: 1
+    latitude: 34.05878
+    longitude: -117.820765
+    _scale: 1
+    align: 7
+    locked: 0
+    markerColliderRect:
+      serializedVersion: 2
+      x: -0.5
+      y: -0.5
+      width: 1
+      height: 1
+    texture: {fileID: 2800000, guid: ea7eb0aa8eaab054a91d4219f9719f63, type: 3}
+    _rotation: 0
+  - label: Army ROTC 1
+    range:
+      max: 20
+      min: 3
+      maxLimit: 20
+      minLimit: 3
+    _enabled: 1
+    latitude: 34.058237
+    longitude: -117.820766
+    _scale: 1
+    align: 7
+    locked: 0
+    markerColliderRect:
+      serializedVersion: 2
+      x: -0.5
+      y: -0.5
+      width: 1
+      height: 1
+    texture: {fileID: 2800000, guid: ea7eb0aa8eaab054a91d4219f9719f63, type: 3}
+    _rotation: 0
+  - label: Army ROTC 2
+    range:
+      max: 20
+      min: 3
+      maxLimit: 20
+      minLimit: 3
+    _enabled: 1
+    latitude: 34.058359
+    longitude: -117.820667
+    _scale: 1
+    align: 7
+    locked: 0
+    markerColliderRect:
+      serializedVersion: 2
+      x: -0.5
+      y: -0.5
+      width: 1
+      height: 1
+    texture: {fileID: 2800000, guid: ea7eb0aa8eaab054a91d4219f9719f63, type: 3}
+    _rotation: 0
+  - label: Pre-College TRIO Programs
+    range:
+      max: 20
+      min: 3
+      maxLimit: 20
+      minLimit: 3
+    _enabled: 1
+    latitude: 34.058488
+    longitude: -117.820444
+    _scale: 1
+    align: 7
+    locked: 0
+    markerColliderRect:
+      serializedVersion: 2
+      x: -0.5
+      y: -0.5
+      width: 1
+      height: 1
+    texture: {fileID: 2800000, guid: ea7eb0aa8eaab054a91d4219f9719f63, type: 3}
+    _rotation: 0
+  - label: Library
+    range:
+      max: 20
+      min: 3
+      maxLimit: 20
+      minLimit: 3
+    _enabled: 1
+    latitude: 34.057843
+    longitude: -117.821356
+    _scale: 1
+    align: 7
+    locked: 0
+    markerColliderRect:
+      serializedVersion: 2
+      x: -0.5
+      y: -0.5
+      width: 1
+      height: 1
+    texture: {fileID: 2800000, guid: ea7eb0aa8eaab054a91d4219f9719f63, type: 3}
+    _rotation: 0
+  - label: Engineering Laboratories
+    range:
+      max: 20
+      min: 3
+      maxLimit: 20
+      minLimit: 3
+    _enabled: 1
+    latitude: 34.059933
+    longitude: -117.82141
+    _scale: 1
+    align: 7
+    locked: 0
+    markerColliderRect:
+      serializedVersion: 2
+      x: -0.5
+      y: -0.5
+      width: 1
+      height: 1
+    texture: {fileID: 2800000, guid: ea7eb0aa8eaab054a91d4219f9719f63, type: 3}
+    _rotation: 0
+  - label: Encinitas Residence Hall
+    range:
+      max: 20
+      min: 3
+      maxLimit: 20
+      minLimit: 3
+    _enabled: 1
+    latitude: 34.062265
+    longitude: -117.820565
+    _scale: 1
+    align: 7
+    locked: 0
+    markerColliderRect:
+      serializedVersion: 2
+      x: -0.5
+      y: -0.5
+      width: 1
+      height: 1
+    texture: {fileID: 2800000, guid: ea7eb0aa8eaab054a91d4219f9719f63, type: 3}
+    _rotation: 0
+  - label: Montecito Residence Hall
+    range:
+      max: 20
+      min: 3
+      maxLimit: 20
+      minLimit: 3
+    _enabled: 1
+    latitude: 34.062154
+    longitude: -117.81929
+    _scale: 1
+    align: 7
+    locked: 0
+    markerColliderRect:
+      serializedVersion: 2
+      x: -0.5
+      y: -0.5
+      width: 1
+      height: 1
+    texture: {fileID: 2800000, guid: ea7eb0aa8eaab054a91d4219f9719f63, type: 3}
+    _rotation: 0
+  - label: Alamitos Residence Hall
+    range:
+      max: 20
+      min: 3
+      maxLimit: 20
+      minLimit: 3
+    _enabled: 1
+    latitude: 34.062216
+    longitude: -117.818051
+    _scale: 1
+    align: 7
+    locked: 0
+    markerColliderRect:
+      serializedVersion: 2
+      x: -0.5
+      y: -0.5
+      width: 1
+      height: 1
+    texture: {fileID: 2800000, guid: ea7eb0aa8eaab054a91d4219f9719f63, type: 3}
+    _rotation: 0
+  - label: Aliso Residence Hall
+    range:
+      max: 20
+      min: 3
+      maxLimit: 20
+      minLimit: 3
+    _enabled: 1
+    latitude: 34.0629
+    longitude: -117.81782
+    _scale: 1
+    align: 7
+    locked: 0
+    markerColliderRect:
+      serializedVersion: 2
+      x: -0.5
+      y: -0.5
+      width: 1
+      height: 1
+    texture: {fileID: 2800000, guid: ea7eb0aa8eaab054a91d4219f9719f63, type: 3}
+    _rotation: 0
+  - label: Music
+    range:
+      max: 20
+      min: 3
+      maxLimit: 20
+      minLimit: 3
+    _enabled: 1
+    latitude: 34.05674
+    longitude: -117.822975
+    _scale: 1
+    align: 7
+    locked: 0
+    markerColliderRect:
+      serializedVersion: 2
+      x: -0.5
+      y: -0.5
+      width: 1
+      height: 1
+    texture: {fileID: 2800000, guid: ea7eb0aa8eaab054a91d4219f9719f63, type: 3}
+    _rotation: 0
+  - label: Temporary Classroom A
+    range:
+      max: 20
+      min: 3
+      maxLimit: 20
+      minLimit: 3
+    _enabled: 1
+    latitude: 34.056284
+    longitude: -117.822454
+    _scale: 1
+    align: 7
+    locked: 0
+    markerColliderRect:
+      serializedVersion: 2
+      x: -0.5
+      y: -0.5
+      width: 1
+      height: 1
+    texture: {fileID: 2800000, guid: ea7eb0aa8eaab054a91d4219f9719f63, type: 3}
+    _rotation: 0
+  - label: Temporary Classroom B
+    range:
+      max: 20
+      min: 3
+      maxLimit: 20
+      minLimit: 3
+    _enabled: 1
+    latitude: 34.056171
+    longitude: -117.822387
+    _scale: 1
+    align: 7
+    locked: 0
+    markerColliderRect:
+      serializedVersion: 2
+      x: -0.5
+      y: -0.5
+      width: 1
+      height: 1
+    texture: {fileID: 2800000, guid: ea7eb0aa8eaab054a91d4219f9719f63, type: 3}
+    _rotation: 0
+  - label: Temporary Classroom C
+    range:
+      max: 20
+      min: 3
+      maxLimit: 20
+      minLimit: 3
+    _enabled: 1
+    latitude: 34.055913
+    longitude: -117.82239
+    _scale: 1
+    align: 7
+    locked: 0
+    markerColliderRect:
+      serializedVersion: 2
+      x: -0.5
+      y: -0.5
+      width: 1
+      height: 1
+    texture: {fileID: 2800000, guid: ea7eb0aa8eaab054a91d4219f9719f63, type: 3}
+    _rotation: 0
+  - label: Temporary Classroom D
+    range:
+      max: 20
+      min: 3
+      maxLimit: 20
+      minLimit: 3
+    _enabled: 1
+    latitude: 34.055969
+    longitude: -117.822505
+    _scale: 1
+    align: 7
+    locked: 0
+    markerColliderRect:
+      serializedVersion: 2
+      x: -0.5
+      y: -0.5
+      width: 1
+      height: 1
+    texture: {fileID: 2800000, guid: ea7eb0aa8eaab054a91d4219f9719f63, type: 3}
+    _rotation: 0
+  - label: Temporary Classroom E
+    range:
+      max: 20
+      min: 3
+      maxLimit: 20
+      minLimit: 3
+    _enabled: 1
+    latitude: 34.056176
+    longitude: -117.822596
+    _scale: 1
+    align: 7
+    locked: 0
+    markerColliderRect:
+      serializedVersion: 2
+      x: -0.5
+      y: -0.5
+      width: 1
+      height: 1
+    texture: {fileID: 2800000, guid: ea7eb0aa8eaab054a91d4219f9719f63, type: 3}
+    _rotation: 0
+  - label: Drama Department/Theatre
+    range:
+      max: 20
+      min: 3
+      maxLimit: 20
+      minLimit: 3
+    _enabled: 1
+    latitude: 34.056449
+    longitude: -117.822065
+    _scale: 1
+    align: 7
+    locked: 0
+    markerColliderRect:
+      serializedVersion: 2
+      x: -0.5
+      y: -0.5
+      width: 1
+      height: 1
+    texture: {fileID: 2800000, guid: ea7eb0aa8eaab054a91d4219f9719f63, type: 3}
+    _rotation: 0
+  - label: University Plaza
+    range:
+      max: 20
+      min: 3
+      maxLimit: 20
+      minLimit: 3
+    _enabled: 1
+    latitude: 34.056991
+    longitude: -117.820383
+    _scale: 1
+    align: 7
+    locked: 0
+    markerColliderRect:
+      serializedVersion: 2
+      x: -0.5
+      y: -0.5
+      width: 1
+      height: 1
+    texture: {fileID: 2800000, guid: ea7eb0aa8eaab054a91d4219f9719f63, type: 3}
+    _rotation: 0
+  - label: Student Organization Center
+    range:
+      max: 20
+      min: 3
+      maxLimit: 20
+      minLimit: 3
+    _enabled: 1
+    latitude: 34.056714
+    longitude: -117.820553
+    _scale: 1
+    align: 7
+    locked: 0
+    markerColliderRect:
+      serializedVersion: 2
+      x: -0.5
+      y: -0.5
+      width: 1
+      height: 1
+    texture: {fileID: 2800000, guid: ea7eb0aa8eaab054a91d4219f9719f63, type: 3}
+    _rotation: 0
+  - label: Fruit/Crops Unit
+    range:
+      max: 20
+      min: 3
+      maxLimit: 20
+      minLimit: 3
+    _enabled: 1
+    latitude: 34.060012
+    longitude: -117.810847
+    _scale: 1
+    align: 7
+    locked: 0
+    markerColliderRect:
+      serializedVersion: 2
+      x: -0.5
+      y: -0.5
+      width: 1
+      height: 1
+    texture: {fileID: 2800000, guid: ea7eb0aa8eaab054a91d4219f9719f63, type: 3}
+    _rotation: 0
+  - label: W.K. Kellogg Arabian Horse Center
+    range:
+      max: 20
+      min: 3
+      maxLimit: 20
+      minLimit: 3
+    _enabled: 1
+    latitude: 34.058601
+    longitude: -117.814622
+    _scale: 1
+    align: 7
+    locked: 0
+    markerColliderRect:
+      serializedVersion: 2
+      x: -0.5
+      y: -0.5
+      width: 1
+      height: 1
+    texture: {fileID: 2800000, guid: ea7eb0aa8eaab054a91d4219f9719f63, type: 3}
+    _rotation: 0
+  - label: Agricultural Unit
+    range:
+      max: 20
+      min: 3
+      maxLimit: 20
+      minLimit: 3
+    _enabled: 1
+    latitude: 34.055111
+    longitude: -117.828441
+    _scale: 1
+    align: 7
+    locked: 0
+    markerColliderRect:
+      serializedVersion: 2
+      x: -0.5
+      y: -0.5
+      width: 1
+      height: 1
+    texture: {fileID: 2800000, guid: ea7eb0aa8eaab054a91d4219f9719f63, type: 3}
+    _rotation: 0
+  - label: Poulty Unit/Poultry Houses
+    range:
+      max: 20
+      min: 3
+      maxLimit: 20
+      minLimit: 3
+    _enabled: 1
+    latitude: 34.05468
+    longitude: -117.828334
+    _scale: 1
+    align: 7
+    locked: 0
+    markerColliderRect:
+      serializedVersion: 2
+      x: -0.5
+      y: -0.5
+      width: 1
+      height: 1
+    texture: {fileID: 2800000, guid: ea7eb0aa8eaab054a91d4219f9719f63, type: 3}
+    _rotation: 0
+  - label: Beef Unit/Feed Shed
+    range:
+      max: 20
+      min: 3
+      maxLimit: 20
+      minLimit: 3
+    _enabled: 1
+    latitude: 34.055449
+    longitude: -117.827583
+    _scale: 1
+    align: 7
+    locked: 0
+    markerColliderRect:
+      serializedVersion: 2
+      x: -0.5
+      y: -0.5
+      width: 1
+      height: 1
+    texture: {fileID: 2800000, guid: ea7eb0aa8eaab054a91d4219f9719f63, type: 3}
+    _rotation: 0
+  - label: Feedmill
+    range:
+      max: 20
+      min: 3
+      maxLimit: 20
+      minLimit: 3
+    _enabled: 1
+    latitude: 34.053969
+    longitude: -117.827497
+    _scale: 1
+    align: 7
+    locked: 0
+    markerColliderRect:
+      serializedVersion: 2
+      x: -0.5
+      y: -0.5
+      width: 1
+      height: 1
+    texture: {fileID: 2800000, guid: ea7eb0aa8eaab054a91d4219f9719f63, type: 3}
+    _rotation: 0
+  - label: Meat Laboratory
+    range:
+      max: 20
+      min: 3
+      maxLimit: 20
+      minLimit: 3
+    _enabled: 1
+    latitude: 34.053905
+    longitude: -117.8281
+    _scale: 1
+    align: 7
+    locked: 0
+    markerColliderRect:
+      serializedVersion: 2
+      x: -0.5
+      y: -0.5
+      width: 1
+      height: 1
+    texture: {fileID: 2800000, guid: ea7eb0aa8eaab054a91d4219f9719f63, type: 3}
+    _rotation: 0
+  - label: Bronco Student Center
+    range:
+      max: 20
+      min: 3
+      maxLimit: 20
+      minLimit: 3
+    _enabled: 1
+    latitude: 34.056187
+    longitude: -117.821271
+    _scale: 1
+    align: 7
+    locked: 0
+    markerColliderRect:
+      serializedVersion: 2
+      x: -0.5
+      y: -0.5
+      width: 1
+      height: 1
+    texture: {fileID: 2800000, guid: ea7eb0aa8eaab054a91d4219f9719f63, type: 3}
+    _rotation: 0
+  - label: W. Keith and Janet Kellogg University Art Gallery
+    range:
+      max: 20
+      min: 3
+      maxLimit: 20
+      minLimit: 3
+    _enabled: 1
+    latitude: 34.056963
+    longitude: -117.821731
+    _scale: 1
+    align: 7
+    locked: 0
+    markerColliderRect:
+      serializedVersion: 2
+      x: -0.5
+      y: -0.5
+      width: 1
+      height: 1
+    texture: {fileID: 2800000, guid: ea7eb0aa8eaab054a91d4219f9719f63, type: 3}
+    _rotation: 0
+  - label: Swine Unit/Shelters
+    range:
+      max: 20
+      min: 3
+      maxLimit: 20
+      minLimit: 3
+    _enabled: 1
+    latitude: 34.052204
+    longitude: -117.822887
+    _scale: 1
+    align: 7
+    locked: 0
+    markerColliderRect:
+      serializedVersion: 2
+      x: -0.5
+      y: -0.5
+      width: 1
+      height: 1
+    texture: {fileID: 2800000, guid: ea7eb0aa8eaab054a91d4219f9719f63, type: 3}
+    _rotation: 0
+  - label: Sheep/Wool Unit
+    range:
+      max: 20
+      min: 3
+      maxLimit: 20
+      minLimit: 3
+    _enabled: 1
+    latitude: 34.052197
+    longitude: -117.82234
+    _scale: 1
+    align: 7
+    locked: 0
+    markerColliderRect:
+      serializedVersion: 2
+      x: -0.5
+      y: -0.5
+      width: 1
+      height: 1
+    texture: {fileID: 2800000, guid: ea7eb0aa8eaab054a91d4219f9719f63, type: 3}
+    _rotation: 0
+  - label: Darlene May Gymnasium
+    range:
+      max: 20
+      min: 3
+      maxLimit: 20
+      minLimit: 3
+    _enabled: 1
+    latitude: 34.054031
+    longitude: -117.821249
+    _scale: 1
+    align: 7
+    locked: 0
+    markerColliderRect:
+      serializedVersion: 2
+      x: -0.5
+      y: -0.5
+      width: 1
+      height: 1
+    texture: {fileID: 2800000, guid: ea7eb0aa8eaab054a91d4219f9719f63, type: 3}
+    _rotation: 0
+  - label: (BRIC) Bronco Recreation Intramural Complex
+    range:
+      max: 20
+      min: 3
+      maxLimit: 20
+      minLimit: 3
+    _enabled: 1
+    latitude: 34.054604
+    longitude: -117.820701
+    _scale: 1
+    align: 7
+    locked: 0
+    markerColliderRect:
+      serializedVersion: 2
+      x: -0.5
+      y: -0.5
+      width: 1
+      height: 1
+    texture: {fileID: 2800000, guid: ea7eb0aa8eaab054a91d4219f9719f63, type: 3}
+    _rotation: 0
+  - label: Kellogg Gymnasium
+    range:
+      max: 20
+      min: 3
+      maxLimit: 20
+      minLimit: 3
+    _enabled: 1
+    latitude: 34.054177
+    longitude: -117.819151
+    _scale: 1
+    align: 7
+    locked: 0
+    markerColliderRect:
+      serializedVersion: 2
+      x: -0.5
+      y: -0.5
+      width: 1
+      height: 1
+    texture: {fileID: 2800000, guid: ea7eb0aa8eaab054a91d4219f9719f63, type: 3}
+    _rotation: 0
+  - label: Swimming Pool
+    range:
+      max: 20
+      min: 3
+      maxLimit: 20
+      minLimit: 3
+    _enabled: 1
+    latitude: 34.054017
+    longitude: -117.820416
+    _scale: 1
+    align: 7
+    locked: 0
+    markerColliderRect:
+      serializedVersion: 2
+      x: -0.5
+      y: -0.5
+      width: 1
+      height: 1
+    texture: {fileID: 2800000, guid: ea7eb0aa8eaab054a91d4219f9719f63, type: 3}
+    _rotation: 0
+  - label: Agricultural Engineering
+    range:
+      max: 20
+      min: 3
+      maxLimit: 20
+      minLimit: 3
+    _enabled: 1
+    latitude: 34.061081
+    longitude: -117.811099
+    _scale: 1
+    align: 7
+    locked: 0
+    markerColliderRect:
+      serializedVersion: 2
+      x: -0.5
+      y: -0.5
+      width: 1
+      height: 1
+    texture: {fileID: 2800000, guid: ea7eb0aa8eaab054a91d4219f9719f63, type: 3}
+    _rotation: 0
+  - label: Health Services
+    range:
+      max: 20
+      min: 3
+      maxLimit: 20
+      minLimit: 3
+    _enabled: 1
+    latitude: 34.057818
+    longitude: -117.828001
+    _scale: 1
+    align: 7
+    locked: 0
+    markerColliderRect:
+      serializedVersion: 2
+      x: -0.5
+      y: -0.5
+      width: 1
+      height: 1
+    texture: {fileID: 2800000, guid: ea7eb0aa8eaab054a91d4219f9719f63, type: 3}
+    _rotation: 0
+  - label: Agricultural Engineering Tractor Shop
+    range:
+      max: 20
+      min: 3
+      maxLimit: 20
+      minLimit: 3
+    _enabled: 1
+    latitude: 34.059819
+    longitude: -117.808186
+    _scale: 1
+    align: 7
+    locked: 0
+    markerColliderRect:
+      serializedVersion: 2
+      x: -0.5
+      y: -0.5
+      width: 1
+      height: 1
+    texture: {fileID: 2800000, guid: ea7eb0aa8eaab054a91d4219f9719f63, type: 3}
+    _rotation: 0
+  - label: Custodial Offices
+    range:
+      max: 20
+      min: 3
+      maxLimit: 20
+      minLimit: 3
+    _enabled: 1
+    latitude: 34.059006
+    longitude: -117.808432
+    _scale: 1
+    align: 7
+    locked: 0
+    markerColliderRect:
+      serializedVersion: 2
+      x: -0.5
+      y: -0.5
+      width: 1
+      height: 1
+    texture: {fileID: 2800000, guid: ea7eb0aa8eaab054a91d4219f9719f63, type: 3}
+    _rotation: 0
+  - label: Training Center
+    range:
+      max: 20
+      min: 3
+      maxLimit: 20
+      minLimit: 3
+    _enabled: 1
+    latitude: 34.059919
+    longitude: -117.80925
+    _scale: 1
+    align: 7
+    locked: 0
+    markerColliderRect:
+      serializedVersion: 2
+      x: -0.5
+      y: -0.5
+      width: 1
+      height: 1
+    texture: {fileID: 2800000, guid: ea7eb0aa8eaab054a91d4219f9719f63, type: 3}
+    _rotation: 0
+  - label: Vista Market
+    range:
+      max: 20
+      min: 3
+      maxLimit: 20
+      minLimit: 3
+    _enabled: 1
+    latitude: 34.053945
+    longitude: -117.817899
+    _scale: 1
+    align: 7
+    locked: 0
+    markerColliderRect:
+      serializedVersion: 2
+      x: -0.5
+      y: -0.5
+      width: 1
+      height: 1
+    texture: {fileID: 2800000, guid: ea7eb0aa8eaab054a91d4219f9719f63, type: 3}
+    _rotation: 0
+  - label: Residence Suites 1
+    range:
+      max: 20
+      min: 3
+      maxLimit: 20
+      minLimit: 3
+    _enabled: 1
+    latitude: 34.055541
+    longitude: -117.818897
+    _scale: 1
+    align: 7
+    locked: 0
+    markerColliderRect:
+      serializedVersion: 2
+      x: -0.5
+      y: -0.5
+      width: 1
+      height: 1
+    texture: {fileID: 2800000, guid: ea7eb0aa8eaab054a91d4219f9719f63, type: 3}
+    _rotation: 0
+  - label: Foundation Administration Offices
+    range:
+      max: 20
+      min: 3
+      maxLimit: 20
+      minLimit: 3
+    _enabled: 1
+    latitude: 34.056239
+    longitude: -117.819881
+    _scale: 1
+    align: 7
+    locked: 0
+    markerColliderRect:
+      serializedVersion: 2
+      x: -0.5
+      y: -0.5
+      width: 1
+      height: 1
+    texture: {fileID: 2800000, guid: ea7eb0aa8eaab054a91d4219f9719f63, type: 3}
+    _rotation: 0
+  - label: Storage Building 1
+    range:
+      max: 20
+      min: 3
+      maxLimit: 20
+      minLimit: 3
+    _enabled: 1
+    latitude: 34.061902
+    longitude: -117.81087
+    _scale: 1
+    align: 7
+    locked: 0
+    markerColliderRect:
+      serializedVersion: 2
+      x: -0.5
+      y: -0.5
+      width: 1
+      height: 1
+    texture: {fileID: 2800000, guid: ea7eb0aa8eaab054a91d4219f9719f63, type: 3}
+    _rotation: 0
+  - label: Palmitas Residence Hall
+    range:
+      max: 20
+      min: 3
+      maxLimit: 20
+      minLimit: 3
+    _enabled: 1
+    latitude: 34.060502
+    longitude: -117.822358
+    _scale: 1
+    align: 7
+    locked: 0
+    markerColliderRect:
+      serializedVersion: 2
+      x: -0.5
+      y: -0.5
+      width: 1
+      height: 1
+    texture: {fileID: 2800000, guid: ea7eb0aa8eaab054a91d4219f9719f63, type: 3}
+    _rotation: 0
+  - label: Cedritos Residence Hall
+    range:
+      max: 20
+      min: 3
+      maxLimit: 20
+      minLimit: 3
+    _enabled: 1
+    latitude: 34.061526
+    longitude: -117.821199
+    _scale: 1
+    align: 7
+    locked: 0
+    markerColliderRect:
+      serializedVersion: 2
+      x: -0.5
+      y: -0.5
+      width: 1
+      height: 1
+    texture: {fileID: 2800000, guid: ea7eb0aa8eaab054a91d4219f9719f63, type: 3}
+    _rotation: 0
+  - label: La Cienega Center (University Housing Center)
+    range:
+      max: 20
+      min: 3
+      maxLimit: 20
+      minLimit: 3
+    _enabled: 1
+    latitude: 34.060918
+    longitude: -117.821962
+    _scale: 1
+    align: 7
+    locked: 0
+    markerColliderRect:
+      serializedVersion: 2
+      x: -0.5
+      y: -0.5
+      width: 1
+      height: 1
+    texture: {fileID: 2800000, guid: ea7eb0aa8eaab054a91d4219f9719f63, type: 3}
+    _rotation: 0
+  - label: Residence Suites 2
+    range:
+      max: 20
+      min: 3
+      maxLimit: 20
+      minLimit: 3
+    _enabled: 1
+    latitude: 34.054975
+    longitude: -117.81845
+    _scale: 1
+    align: 7
+    locked: 0
+    markerColliderRect:
+      serializedVersion: 2
+      x: -0.5
+      y: -0.5
+      width: 1
+      height: 1
+    texture: {fileID: 2800000, guid: ea7eb0aa8eaab054a91d4219f9719f63, type: 3}
+    _rotation: 0
+  - label: Residence Suites 3
+    range:
+      max: 20
+      min: 3
+      maxLimit: 20
+      minLimit: 3
+    _enabled: 1
+    latitude: 34.054719
+    longitude: -117.817962
+    _scale: 1
+    align: 7
+    locked: 0
+    markerColliderRect:
+      serializedVersion: 2
+      x: -0.5
+      y: -0.5
+      width: 1
+      height: 1
+    texture: {fileID: 2800000, guid: ea7eb0aa8eaab054a91d4219f9719f63, type: 3}
+    _rotation: 0
+  - label: Residence Suites 4
+    range:
+      max: 20
+      min: 3
+      maxLimit: 20
+      minLimit: 3
+    _enabled: 1
+    latitude: 34.054443
+    longitude: -117.817488
+    _scale: 1
+    align: 7
+    locked: 0
+    markerColliderRect:
+      serializedVersion: 2
+      x: -0.5
+      y: -0.5
+      width: 1
+      height: 1
+    texture: {fileID: 2800000, guid: ea7eb0aa8eaab054a91d4219f9719f63, type: 3}
+    _rotation: 0
+  - label: Residence Suites 5
+    range:
+      max: 20
+      min: 3
+      maxLimit: 20
+      minLimit: 3
+    _enabled: 1
+    latitude: 34.053882
+    longitude: -117.816966
+    _scale: 1
+    align: 7
+    locked: 0
+    markerColliderRect:
+      serializedVersion: 2
+      x: -0.5
+      y: -0.5
+      width: 1
+      height: 1
+    texture: {fileID: 2800000, guid: ea7eb0aa8eaab054a91d4219f9719f63, type: 3}
+    _rotation: 0
+  - label: Rose Float Laboratory
+    range:
+      max: 20
+      min: 3
+      maxLimit: 20
+      minLimit: 3
+    _enabled: 1
+    latitude: 34.060156
+    longitude: -117.808235
+    _scale: 1
+    align: 7
+    locked: 0
+    markerColliderRect:
+      serializedVersion: 2
+      x: -0.5
+      y: -0.5
+      width: 1
+      height: 1
+    texture: {fileID: 2800000, guid: ea7eb0aa8eaab054a91d4219f9719f63, type: 3}
+    _rotation: 0
+  - label: Pesticide Building
+    range:
+      max: 20
+      min: 3
+      maxLimit: 20
+      minLimit: 3
+    _enabled: 1
+    latitude: 34.061618
+    longitude: -117.810752
+    _scale: 1
+    align: 7
+    locked: 0
+    markerColliderRect:
+      serializedVersion: 2
+      x: -0.5
+      y: -0.5
+      width: 1
+      height: 1
+    texture: {fileID: 2800000, guid: ea7eb0aa8eaab054a91d4219f9719f63, type: 3}
+    _rotation: 0
+  - label: Bronco Bookstorer
+    range:
+      max: 20
+      min: 3
+      maxLimit: 20
+      minLimit: 3
+    _enabled: 1
+    latitude: 34.055987
+    longitude: -117.820448
+    _scale: 1
+    align: 7
+    locked: 0
+    markerColliderRect:
+      serializedVersion: 2
+      x: -0.5
+      y: -0.5
+      width: 1
+      height: 1
+    texture: {fileID: 2800000, guid: ea7eb0aa8eaab054a91d4219f9719f63, type: 3}
+    _rotation: 0
+  - label: Equine Research Facility
+    range:
+      max: 20
+      min: 3
+      maxLimit: 20
+      minLimit: 3
+    _enabled: 1
+    latitude: 34.059255
+    longitude: -117.813919
+    _scale: 1
+    align: 7
+    locked: 0
+    markerColliderRect:
+      serializedVersion: 2
+      x: -0.5
+      y: -0.5
+      width: 1
+      height: 1
+    texture: {fileID: 2800000, guid: ea7eb0aa8eaab054a91d4219f9719f63, type: 3}
+    _rotation: 0
+  - label: Hay Barn
+    range:
+      max: 20
+      min: 3
+      maxLimit: 20
+      minLimit: 3
+    _enabled: 1
+    latitude: 34.054545
+    longitude: -117.827583
+    _scale: 1
+    align: 7
+    locked: 0
+    markerColliderRect:
+      serializedVersion: 2
+      x: -0.5
+      y: -0.5
+      width: 1
+      height: 1
+    texture: {fileID: 2800000, guid: ea7eb0aa8eaab054a91d4219f9719f63, type: 3}
+    _rotation: 0
+  - label: Los Olivos Commons
+    range:
+      max: 20
+      min: 3
+      maxLimit: 20
+      minLimit: 3
+    _enabled: 1
+    latitude: 34.062364
+    longitude: -117.82154
+    _scale: 1
+    align: 7
+    locked: 0
+    markerColliderRect:
+      serializedVersion: 2
+      x: -0.5
+      y: -0.5
+      width: 1
+      height: 1
+    texture: {fileID: 2800000, guid: ea7eb0aa8eaab054a91d4219f9719f63, type: 3}
+    _rotation: 0
+  - label: Recreation/Maintenance
+    range:
+      max: 20
+      min: 3
+      maxLimit: 20
+      minLimit: 3
+    _enabled: 1
+    latitude: 34.063006
+    longitude: -117.816712
+    _scale: 1
+    align: 7
+    locked: 0
+    markerColliderRect:
+      serializedVersion: 2
+      x: -0.5
+      y: -0.5
+      width: 1
+      height: 1
+    texture: {fileID: 2800000, guid: ea7eb0aa8eaab054a91d4219f9719f63, type: 3}
+    _rotation: 0
+  - label: Procurement/Receiving
+    range:
+      max: 20
+      min: 3
+      maxLimit: 20
+      minLimit: 3
+    _enabled: 1
+    latitude: 34.059599
+    longitude: -117.807839
+    _scale: 1
+    align: 7
+    locked: 0
+    markerColliderRect:
+      serializedVersion: 2
+      x: -0.5
+      y: -0.5
+      width: 1
+      height: 1
+    texture: {fileID: 2800000, guid: ea7eb0aa8eaab054a91d4219f9719f63, type: 3}
+    _rotation: 0
+  - label: Kellogg West Education/Dining
+    range:
+      max: 20
+      min: 3
+      maxLimit: 20
+      minLimit: 3
+    _enabled: 1
+    latitude: 34.056631
+    longitude: -117.824752
+    _scale: 1
+    align: 7
+    locked: 0
+    markerColliderRect:
+      serializedVersion: 2
+      x: -0.5
+      y: -0.5
+      width: 1
+      height: 1
+    texture: {fileID: 2800000, guid: ea7eb0aa8eaab054a91d4219f9719f63, type: 3}
+    _rotation: 0
+  - label: Kellogg West/Addition
+    range:
+      max: 20
+      min: 3
+      maxLimit: 20
+      minLimit: 3
+    _enabled: 1
+    latitude: 34.056631
+    longitude: -117.824752
+    _scale: 1
+    align: 7
+    locked: 0
+    markerColliderRect:
+      serializedVersion: 2
+      x: -0.5
+      y: -0.5
+      width: 1
+      height: 1
+    texture: {fileID: 2800000, guid: ea7eb0aa8eaab054a91d4219f9719f63, type: 3}
+    _rotation: 0
+  - label: Kellogg West Main Lodge
+    range:
+      max: 20
+      min: 3
+      maxLimit: 20
+      minLimit: 3
+    _enabled: 1
+    latitude: 34.05627
+    longitude: -117.825961
+    _scale: 1
+    align: 7
+    locked: 0
+    markerColliderRect:
+      serializedVersion: 2
+      x: -0.5
+      y: -0.5
+      width: 1
+      height: 1
+    texture: {fileID: 2800000, guid: ea7eb0aa8eaab054a91d4219f9719f63, type: 3}
+    _rotation: 0
+  - label: Kellogg West Addition
+    range:
+      max: 20
+      min: 3
+      maxLimit: 20
+      minLimit: 3
+    _enabled: 1
+    latitude: 34.056787
+    longitude: -117.825673
+    _scale: 1
+    align: 7
+    locked: 0
+    markerColliderRect:
+      serializedVersion: 2
+      x: -0.5
+      y: -0.5
+      width: 1
+      height: 1
+    texture: {fileID: 2800000, guid: ea7eb0aa8eaab054a91d4219f9719f63, type: 3}
+    _rotation: 0
+  - label: Collins College of Hospitality Management 1
+    range:
+      max: 20
+      min: 3
+      maxLimit: 20
+      minLimit: 3
+    _enabled: 1
+    latitude: 34.054847
+    longitude: -117.823983
+    _scale: 1
+    align: 7
+    locked: 0
+    markerColliderRect:
+      serializedVersion: 2
+      x: -0.5
+      y: -0.5
+      width: 1
+      height: 1
+    texture: {fileID: 2800000, guid: ea7eb0aa8eaab054a91d4219f9719f63, type: 3}
+    _rotation: 0
+  - label: Collins College of Hospitality Management 2
+    range:
+      max: 20
+      min: 3
+      maxLimit: 20
+      minLimit: 3
+    _enabled: 1
+    latitude: 34.055055
+    longitude: -117.824808
+    _scale: 1
+    align: 7
+    locked: 0
+    markerColliderRect:
+      serializedVersion: 2
+      x: -0.5
+      y: -0.5
+      width: 1
+      height: 1
+    texture: {fileID: 2800000, guid: ea7eb0aa8eaab054a91d4219f9719f63, type: 3}
+    _rotation: 0
+  - label: Collins College of Hospitality Management 3
+    range:
+      max: 20
+      min: 3
+      maxLimit: 20
+      minLimit: 3
+    _enabled: 1
+    latitude: 34.055324
+    longitude: -117.824422
+    _scale: 1
+    align: 7
+    locked: 0
+    markerColliderRect:
+      serializedVersion: 2
+      x: -0.5
+      y: -0.5
+      width: 1
+      height: 1
+    texture: {fileID: 2800000, guid: ea7eb0aa8eaab054a91d4219f9719f63, type: 3}
+    _rotation: 0
+  - label: Collins College of Hospitality Management 4
+    range:
+      max: 20
+      min: 3
+      maxLimit: 20
+      minLimit: 3
+    _enabled: 1
+    latitude: 34.054848
+    longitude: -117.825329
+    _scale: 1
+    align: 7
+    locked: 0
+    markerColliderRect:
+      serializedVersion: 2
+      x: -0.5
+      y: -0.5
+      width: 1
+      height: 1
+    texture: {fileID: 2800000, guid: ea7eb0aa8eaab054a91d4219f9719f63, type: 3}
+    _rotation: 0
+  - label: Facilities Management
+    range:
+      max: 20
+      min: 3
+      maxLimit: 20
+      minLimit: 3
+    _enabled: 1
+    latitude: 34.059583
+    longitude: -117.808809
+    _scale: 1
+    align: 7
+    locked: 0
+    markerColliderRect:
+      serializedVersion: 2
+      x: -0.5
+      y: -0.5
+      width: 1
+      height: 1
+    texture: {fileID: 2800000, guid: ea7eb0aa8eaab054a91d4219f9719f63, type: 3}
+    _rotation: 0
+  - label: Facilities Management Warehouse
+    range:
+      max: 20
+      min: 3
+      maxLimit: 20
+      minLimit: 3
+    _enabled: 1
+    latitude: 34.059794
+    longitude: -117.808651
+    _scale: 1
+    align: 7
+    locked: 0
+    markerColliderRect:
+      serializedVersion: 2
+      x: -0.5
+      y: -0.5
+      width: 1
+      height: 1
+    texture: {fileID: 2800000, guid: ea7eb0aa8eaab054a91d4219f9719f63, type: 3}
+    _rotation: 0
+  - label: Carpenter Shop
+    range:
+      max: 20
+      min: 3
+      maxLimit: 20
+      minLimit: 3
+    _enabled: 1
+    latitude: 34.059978
+    longitude: -117.808871
+    _scale: 1
+    align: 7
+    locked: 0
+    markerColliderRect:
+      serializedVersion: 2
+      x: -0.5
+      y: -0.5
+      width: 1
+      height: 1
+    texture: {fileID: 2800000, guid: ea7eb0aa8eaab054a91d4219f9719f63, type: 3}
+    _rotation: 0
+  - label: Auto Shop
+    range:
+      max: 20
+      min: 3
+      maxLimit: 20
+      minLimit: 3
+    _enabled: 1
+    latitude: 34.05928
+    longitude: -117.808265
+    _scale: 1
+    align: 7
+    locked: 0
+    markerColliderRect:
+      serializedVersion: 2
+      x: -0.5
+      y: -0.5
+      width: 1
+      height: 1
+    texture: {fileID: 2800000, guid: ea7eb0aa8eaab054a91d4219f9719f63, type: 3}
+    _rotation: 0
+  - label: I-Poly High School
+    range:
+      max: 20
+      min: 3
+      maxLimit: 20
+      minLimit: 3
+    _enabled: 1
+    latitude: 34.050976
+    longitude: -117.819512
+    _scale: 1
+    align: 7
+    locked: 0
+    markerColliderRect:
+      serializedVersion: 2
+      x: -0.5
+      y: -0.5
+      width: 1
+      height: 1
+    texture: {fileID: 2800000, guid: ea7eb0aa8eaab054a91d4219f9719f63, type: 3}
+    _rotation: 0
+  - label: English Language Institute 1
+    range:
+      max: 20
+      min: 3
+      maxLimit: 20
+      minLimit: 3
+    _enabled: 1
+    latitude: 34.053345
+    longitude: -117.819684
+    _scale: 1
+    align: 7
+    locked: 0
+    markerColliderRect:
+      serializedVersion: 2
+      x: -0.5
+      y: -0.5
+      width: 1
+      height: 1
+    texture: {fileID: 2800000, guid: ea7eb0aa8eaab054a91d4219f9719f63, type: 3}
+    _rotation: 0
+  - label: English Language Institute 2
+    range:
+      max: 20
+      min: 3
+      maxLimit: 20
+      minLimit: 3
+    _enabled: 1
+    latitude: 34.053345
+    longitude: -117.819684
+    _scale: 1
+    align: 7
+    locked: 0
+    markerColliderRect:
+      serializedVersion: 2
+      x: -0.5
+      y: -0.5
+      width: 1
+      height: 1
+    texture: {fileID: 2800000, guid: ea7eb0aa8eaab054a91d4219f9719f63, type: 3}
+    _rotation: 0
+  - label: English Language Institute 3
+    range:
+      max: 20
+      min: 3
+      maxLimit: 20
+      minLimit: 3
+    _enabled: 1
+    latitude: 34.053498
+    longitude: -117.820067
+    _scale: 1
+    align: 7
+    locked: 0
+    markerColliderRect:
+      serializedVersion: 2
+      x: -0.5
+      y: -0.5
+      width: 1
+      height: 1
+    texture: {fileID: 2800000, guid: ea7eb0aa8eaab054a91d4219f9719f63, type: 3}
+    _rotation: 0
+  - label: English Language Institute 4
+    range:
+      max: 20
+      min: 3
+      maxLimit: 20
+      minLimit: 3
+    _enabled: 1
+    latitude: 34.053309
+    longitude: -117.820131
+    _scale: 1
+    align: 7
+    locked: 0
+    markerColliderRect:
+      serializedVersion: 2
+      x: -0.5
+      y: -0.5
+      width: 1
+      height: 1
+    texture: {fileID: 2800000, guid: ea7eb0aa8eaab054a91d4219f9719f63, type: 3}
+    _rotation: 0
+  - label: Interim Design Center
+    range:
+      max: 20
+      min: 3
+      maxLimit: 20
+      minLimit: 3
+    _enabled: 1
+    latitude: 34.060517
+    longitude: -117.812284
+    _scale: 1
+    align: 7
+    locked: 0
+    markerColliderRect:
+      serializedVersion: 2
+      x: -0.5
+      y: -0.5
+      width: 1
+      height: 1
+    texture: {fileID: 2800000, guid: ea7eb0aa8eaab054a91d4219f9719f63, type: 3}
+    _rotation: 0
+  - label: Medic-1
+    range:
+      max: 20
+      min: 3
+      maxLimit: 20
+      minLimit: 3
+    _enabled: 1
+    latitude: -34.061192
+    longitude: -117.816573
+    _scale: 1
+    align: 7
+    locked: 0
+    markerColliderRect:
+      serializedVersion: 2
+      x: -0.5
+      y: -0.5
+      width: 1
+      height: 1
+    texture: {fileID: 2800000, guid: ea7eb0aa8eaab054a91d4219f9719f63, type: 3}
+    _rotation: 0
+  - label: Student Affairs Information Technology Services
+    range:
+      max: 20
+      min: 3
+      maxLimit: 20
+      minLimit: 3
+    _enabled: 1
+    latitude: 34.06137
+    longitude: -117.818611
+    _scale: 1
+    align: 7
+    locked: 0
+    markerColliderRect:
+      serializedVersion: 2
+      x: -0.5
+      y: -0.5
+      width: 1
+      height: 1
+    texture: {fileID: 2800000, guid: ea7eb0aa8eaab054a91d4219f9719f63, type: 3}
+    _rotation: 0
+  - label: Laboratory Facility
+    range:
+      max: 20
+      min: 3
+      maxLimit: 20
+      minLimit: 3
+    _enabled: 1
+    latitude: 34.057824
+    longitude: -117.826169
+    _scale: 1
+    align: 7
+    locked: 0
+    markerColliderRect:
+      serializedVersion: 2
+      x: -0.5
+      y: -0.5
+      width: 1
+      height: 1
+    texture: {fileID: 2800000, guid: ea7eb0aa8eaab054a91d4219f9719f63, type: 3}
+    _rotation: 0
+  - label: University Office Building
+    range:
+      max: 20
+      min: 3
+      maxLimit: 20
+      minLimit: 3
+    _enabled: 1
+    latitude: 34.059215
+    longitude: -117.823248
+    _scale: 1
+    align: 7
+    locked: 0
+    markerColliderRect:
+      serializedVersion: 2
+      x: -0.5
+      y: -0.5
+      width: 1
+      height: 1
+    texture: {fileID: 2800000, guid: ea7eb0aa8eaab054a91d4219f9719f63, type: 3}
+    _rotation: 0
+  - label: Cultural Center
+    range:
+      max: 20
+      min: 3
+      maxLimit: 20
+      minLimit: 3
+    _enabled: 1
+    latitude: 34.057935
+    longitude: -117.82269
+    _scale: 1
+    align: 7
+    locked: 0
+    markerColliderRect:
+      serializedVersion: 2
+      x: -0.5
+      y: -0.5
+      width: 1
+      height: 1
+    texture: {fileID: 2800000, guid: ea7eb0aa8eaab054a91d4219f9719f63, type: 3}
+    _rotation: 0
+  - label: Campus Center
+    range:
+      max: 20
+      min: 3
+      maxLimit: 20
+      minLimit: 3
+    _enabled: 1
+    latitude: 34.057722
+    longitude: -117.823205
+    _scale: 1
+    align: 7
+    locked: 0
+    markerColliderRect:
+      serializedVersion: 2
+      x: -0.5
+      y: -0.5
+      width: 1
+      height: 1
+    texture: {fileID: 2800000, guid: ea7eb0aa8eaab054a91d4219f9719f63, type: 3}
+    _rotation: 0
+  - label: Classroom/Laboratory/Administration (CLA)
+    range:
+      max: 20
+      min: 3
+      maxLimit: 20
+      minLimit: 3
+    _enabled: 1
+    latitude: 34.059757
+    longitude: -117.819686
+    _scale: 1
+    align: 7
+    locked: 0
+    markerColliderRect:
+      serializedVersion: 2
+      x: -0.5
+      y: -0.5
+      width: 1
+      height: 1
+    texture: {fileID: 2800000, guid: ea7eb0aa8eaab054a91d4219f9719f63, type: 3}
+    _rotation: 0
+  - label: Storage Building 2
+    range:
+      max: 20
+      min: 3
+      maxLimit: 20
+      minLimit: 3
+    _enabled: 1
+    latitude: 34.061846
+    longitude: -117.811017
+    _scale: 1
+    align: 7
+    locked: 0
+    markerColliderRect:
+      serializedVersion: 2
+      x: -0.5
+      y: -0.5
+      width: 1
+      height: 1
+    texture: {fileID: 2800000, guid: ea7eb0aa8eaab054a91d4219f9719f63, type: 3}
+    _rotation: 0
+  - label: Storage Building 3
+    range:
+      max: 20
+      min: 3
+      maxLimit: 20
+      minLimit: 3
+    _enabled: 1
+    latitude: 34.062042
+    longitude: -117.810829
+    _scale: 1
+    align: 7
+    locked: 0
+    markerColliderRect:
+      serializedVersion: 2
+      x: -0.5
+      y: -0.5
+      width: 1
+      height: 1
+    texture: {fileID: 2800000, guid: ea7eb0aa8eaab054a91d4219f9719f63, type: 3}
+    _rotation: 0
+  - label: Parking Structure
+    range:
+      max: 20
+      min: 3
+      maxLimit: 20
+      minLimit: 3
+    _enabled: 1
+    latitude: 34.060093
+    longitude: -117.81684
+    _scale: 1
+    align: 7
+    locked: 0
+    markerColliderRect:
+      serializedVersion: 2
+      x: -0.5
+      y: -0.5
+      width: 1
+      height: 1
+    texture: {fileID: 2800000, guid: ea7eb0aa8eaab054a91d4219f9719f63, type: 3}
+    _rotation: 0
+  - label: Police and Parking Services
+    range:
+      max: 20
+      min: 3
+      maxLimit: 20
+      minLimit: 3
+    _enabled: 1
+    latitude: 34.060782
+    longitude: -117.815799
+    _scale: 1
+    align: 7
+    locked: 0
+    markerColliderRect:
+      serializedVersion: 2
+      x: -0.5
+      y: -0.5
+      width: 1
+      height: 1
+    texture: {fileID: 0}
+    _rotation: 0
+  - label: Manor House
+    range:
+      max: 20
+      min: 3
+      maxLimit: 20
+      minLimit: 3
+    _enabled: 1
+    latitude: 34.060533
+    longitude: -117.823025
+    _scale: 1
+    align: 7
+    locked: 0
+    markerColliderRect:
+      serializedVersion: 2
+      x: -0.5
+      y: -0.5
+      width: 1
+      height: 1
+    texture: {fileID: 2800000, guid: ea7eb0aa8eaab054a91d4219f9719f63, type: 3}
+    _rotation: 0
+  - label: Kellogg House Pomona
+    range:
+      max: 20
+      min: 3
+      maxLimit: 20
+      minLimit: 3
+    _enabled: 1
+    latitude: 34.062631
+    longitude: -117.824441
+    _scale: 1
+    align: 7
+    locked: 0
+    markerColliderRect:
+      serializedVersion: 2
+      x: -0.5
+      y: -0.5
+      width: 1
+      height: 1
+    texture: {fileID: 2800000, guid: ea7eb0aa8eaab054a91d4219f9719f63, type: 3}
+    _rotation: 0
+  - label: Guest House
+    range:
+      max: 20
+      min: 3
+      maxLimit: 20
+      minLimit: 3
+    _enabled: 1
+    latitude: 34.062447
+    longitude: -117.824731
+    _scale: 1
+    align: 7
+    locked: 0
+    markerColliderRect:
+      serializedVersion: 2
+      x: -0.5
+      y: -0.5
+      width: 1
+      height: 1
+    texture: {fileID: 2800000, guid: ea7eb0aa8eaab054a91d4219f9719f63, type: 3}
+    _rotation: 0
+  - label: Child Care Center
+    range:
+      max: 20
+      min: 3
+      maxLimit: 20
+      minLimit: 3
+    _enabled: 1
+    latitude: 34.056067
+    longitude: -117.819383
+    _scale: 1
+    align: 7
+    locked: 0
+    markerColliderRect:
+      serializedVersion: 2
+      x: -0.5
+      y: -0.5
+      width: 1
+      height: 1
+    texture: {fileID: 2800000, guid: ea7eb0aa8eaab054a91d4219f9719f63, type: 3}
+    _rotation: 0
+  - label: MASA Building
+    range:
+      max: 20
+      min: 3
+      maxLimit: 20
+      minLimit: 3
+    _enabled: 1
+    latitude: 34.057207
+    longitude: -117.820864
+    _scale: 1
+    align: 7
+    locked: 0
+    markerColliderRect:
+      serializedVersion: 2
+      x: -0.5
+      y: -0.5
+      width: 1
+      height: 1
+    texture: {fileID: 2800000, guid: ea7eb0aa8eaab054a91d4219f9719f63, type: 3}
+    _rotation: 0
+  - label: College of Business Administration 1
+    range:
+      max: 20
+      min: 3
+      maxLimit: 20
+      minLimit: 3
+    _enabled: 1
+    latitude: 34.061312
+    longitude: -117.819605
+    _scale: 1
+    align: 7
+    locked: 0
+    markerColliderRect:
+      serializedVersion: 2
+      x: -0.5
+      y: -0.5
+      width: 1
+      height: 1
+    texture: {fileID: 2800000, guid: ea7eb0aa8eaab054a91d4219f9719f63, type: 3}
+    _rotation: 0
+  - label: College of Business Administration 2
+    range:
+      max: 20
+      min: 3
+      maxLimit: 20
+      minLimit: 3
+    _enabled: 1
+    latitude: 34.061276
+    longitude: -117.820163
+    _scale: 1
+    align: 7
+    locked: 0
+    markerColliderRect:
+      serializedVersion: 2
+      x: -0.5
+      y: -0.5
+      width: 1
+      height: 1
+    texture: {fileID: 2800000, guid: ea7eb0aa8eaab054a91d4219f9719f63, type: 3}
+    _rotation: 0
+  - label: College of Business Administration 3
+    range:
+      max: 20
+      min: 3
+      maxLimit: 20
+      minLimit: 3
+    _enabled: 1
+    latitude: 34.061578
+    longitude: -117.819906
+    _scale: 1
+    align: 7
+    locked: 0
+    markerColliderRect:
+      serializedVersion: 2
+      x: -0.5
+      y: -0.5
+      width: 1
+      height: 1
+    texture: {fileID: 2800000, guid: ea7eb0aa8eaab054a91d4219f9719f63, type: 3}
+    _rotation: 0
+  - label: Chilled Water Center Pl
+    range:
+      max: 20
+      min: 3
+      maxLimit: 20
+      minLimit: 3
+    _enabled: 1
+    latitude: 34.057045
+    longitude: -117.82953
+    _scale: 1
+    align: 7
+    locked: 0
+    markerColliderRect:
+      serializedVersion: 2
+      x: -0.5
+      y: -0.5
+      width: 1
+      height: 1
+    texture: {fileID: 2800000, guid: ea7eb0aa8eaab054a91d4219f9719f63, type: 3}
+    _rotation: 0
+  - label: University Village
+    range:
+      max: 20
+      min: 3
+      maxLimit: 20
+      minLimit: 3
+    _enabled: 1
+    latitude: 34.048298
+    longitude: -117.815175
+    _scale: 1
+    align: 7
+    locked: 0
+    markerColliderRect:
+      serializedVersion: 2
+      x: -0.5
+      y: -0.5
+      width: 1
+      height: 1
+    texture: {fileID: 2800000, guid: ea7eb0aa8eaab054a91d4219f9719f63, type: 3}
+    _rotation: 0
+  - label: John T. Lyle Center for Regenerative Studies 1
+    range:
+      max: 20
+      min: 3
+      maxLimit: 20
+      minLimit: 3
+    _enabled: 1
+    latitude: 34.049589
+    longitude: -117.824498
+    _scale: 1
+    align: 7
+    locked: 0
+    markerColliderRect:
+      serializedVersion: 2
+      x: -0.5
+      y: -0.5
+      width: 1
+      height: 1
+    texture: {fileID: 2800000, guid: ea7eb0aa8eaab054a91d4219f9719f63, type: 3}
+    _rotation: 0
+  - label: John T. Lyle Center for Regenerative Studies 2
+    range:
+      max: 20
+      min: 3
+      maxLimit: 20
+      minLimit: 3
+    _enabled: 1
+    latitude: 34.049782
+    longitude: -117.824409
+    _scale: 1
+    align: 7
+    locked: 0
+    markerColliderRect:
+      serializedVersion: 2
+      x: -0.5
+      y: -0.5
+      width: 1
+      height: 1
+    texture: {fileID: 2800000, guid: ea7eb0aa8eaab054a91d4219f9719f63, type: 3}
+    _rotation: 0
+  - label: John T. Lyle Center for Regenerative Studies 3
+    range:
+      max: 20
+      min: 3
+      maxLimit: 20
+      minLimit: 3
+    _enabled: 1
+    latitude: 34.048429
+    longitude: -117.819171
+    _scale: 1
+    align: 7
+    locked: 0
+    markerColliderRect:
+      serializedVersion: 2
+      x: -0.5
+      y: -0.5
+      width: 1
+      height: 1
+    texture: {fileID: 2800000, guid: ea7eb0aa8eaab054a91d4219f9719f63, type: 3}
+    _rotation: 0
+  - label: Agriscapes/Farm Store
+    range:
+      max: 20
+      min: 3
+      maxLimit: 20
+      minLimit: 3
+    _enabled: 1
+    latitude: 34.048429
+    longitude: -117.819171
+    _scale: 1
+    align: 7
+    locked: 0
+    markerColliderRect:
+      serializedVersion: 2
+      x: -0.5
+      y: -0.5
+      width: 1
+      height: 1
+    texture: {fileID: 2800000, guid: ea7eb0aa8eaab054a91d4219f9719f63, type: 3}
+    _rotation: 0
+  - label: Agriscapes 1
+    range:
+      max: 20
+      min: 3
+      maxLimit: 20
+      minLimit: 3
+    _enabled: 1
+    latitude: 34.04837
+    longitude: -117.819089
+    _scale: 1
+    align: 7
+    locked: 0
+    markerColliderRect:
+      serializedVersion: 2
+      x: -0.5
+      y: -0.5
+      width: 1
+      height: 1
+    texture: {fileID: 2800000, guid: ea7eb0aa8eaab054a91d4219f9719f63, type: 3}
+    _rotation: 0
+  - label: Agriscapes 2
+    range:
+      max: 20
+      min: 3
+      maxLimit: 20
+      minLimit: 3
+    _enabled: 1
+    latitude: 34.046721
+    longitude: -117.819406
+    _scale: 1
+    align: 7
+    locked: 0
+    markerColliderRect:
+      serializedVersion: 2
+      x: -0.5
+      y: -0.5
+      width: 1
+      height: 1
+    texture: {fileID: 2800000, guid: ea7eb0aa8eaab054a91d4219f9719f63, type: 3}
+    _rotation: 0
+  - label: Innovation Village
+    range:
+      max: 20
+      min: 3
+      maxLimit: 20
+      minLimit: 3
+    _enabled: 1
+    latitude: 34.053812
+    longitude: -117.811602
+    _scale: 1
+    align: 7
+    locked: 0
+    markerColliderRect:
+      serializedVersion: 2
+      x: -0.5
+      y: -0.5
+      width: 1
+      height: 1
+    texture: {fileID: 2800000, guid: ea7eb0aa8eaab054a91d4219f9719f63, type: 3}
+    _rotation: 0
+  - label: American Red Cross Headquarters
+    range:
+      max: 20
+      min: 3
+      maxLimit: 20
+      minLimit: 3
+    _enabled: 1
+    latitude: 34.053812
+    longitude: -117.811602
+    _scale: 1
+    align: 7
+    locked: 0
+    markerColliderRect:
+      serializedVersion: 2
+      x: -0.5
+      y: -0.5
+      width: 1
+      height: 1
+    texture: {fileID: 2800000, guid: ea7eb0aa8eaab054a91d4219f9719f63, type: 3}
+    _rotation: 0
+  - label: Center for Training, Technology and Incubation 1
+    range:
+      max: 20
+      min: 3
+      maxLimit: 20
+      minLimit: 3
+    _enabled: 1
+    latitude: 34.04999
+    longitude: -117.815218
+    _scale: 1
+    align: 7
+    locked: 0
+    markerColliderRect:
+      serializedVersion: 2
+      x: -0.5
+      y: -0.5
+      width: 1
+      height: 1
+    texture: {fileID: 2800000, guid: ea7eb0aa8eaab054a91d4219f9719f63, type: 3}
+    _rotation: 0
+  - label: Center for Training, Technology and Incubation 2
+    range:
+      max: 20
+      min: 3
+      maxLimit: 20
+      minLimit: 3
+    _enabled: 1
+    latitude: 34.050404
+    longitude: -117.815284
+    _scale: 1
+    align: 7
+    locked: 0
+    markerColliderRect:
+      serializedVersion: 2
+      x: -0.5
+      y: -0.5
+      width: 1
+      height: 1
+    texture: {fileID: 2800000, guid: ea7eb0aa8eaab054a91d4219f9719f63, type: 3}
+    _rotation: 0
+  - label: Center for Training, Technology and Incubation 3
+    range:
+      max: 20
+      min: 3
+      maxLimit: 20
+      minLimit: 3
+    _enabled: 1
+    latitude: 34.050208
+    longitude: -117.814801
+    _scale: 1
+    align: 7
+    locked: 0
+    markerColliderRect:
+      serializedVersion: 2
+      x: -0.5
+      y: -0.5
+      width: 1
+      height: 1
+    texture: {fileID: 2800000, guid: ea7eb0aa8eaab054a91d4219f9719f63, type: 3}
+    _rotation: 0
+  - label: Building 3
+    range:
+      max: 20
+      min: 3
+      maxLimit: 20
+      minLimit: 3
+    _enabled: 1
+    latitude: 34.05775
+    longitude: -117.826024
+    _scale: 1
+    align: 7
+    locked: 0
+    markerColliderRect:
+      serializedVersion: 2
+      x: -0.5
+      y: -0.5
+      width: 1
+      height: 1
+    texture: {fileID: 2800000, guid: ea7eb0aa8eaab054a91d4219f9719f63, type: 3}
+    _rotation: 0
+  - label: A Parking Lot
+    range:
+      max: 20
+      min: 3
+      maxLimit: 20
+      minLimit: 3
+    _enabled: 1
+    latitude: 34.060572
+    longitude: -117.824616
+    _scale: 1
+    align: 7
+    locked: 0
+    markerColliderRect:
+      serializedVersion: 2
+      x: -0.5
+      y: -0.5
+      width: 1
+      height: 1
+    texture: {fileID: 2800000, guid: ea7eb0aa8eaab054a91d4219f9719f63, type: 3}
+    _rotation: 0
+  - label: B Parking Lot
+    range:
+      max: 20
+      min: 3
+      maxLimit: 20
+      minLimit: 3
+    _enabled: 1
+    latitude: 34.052457
+    longitude: -117.815559
+    _scale: 1
+    align: 7
+    locked: 0
+    markerColliderRect:
+      serializedVersion: 2
+      x: -0.5
+      y: -0.5
+      width: 1
+      height: 1
+    texture: {fileID: 2800000, guid: ea7eb0aa8eaab054a91d4219f9719f63, type: 3}
+    _rotation: 0
+  - label: E1 Parking Lot
+    range:
+      max: 20
+      min: 3
+      maxLimit: 20
+      minLimit: 3
+    _enabled: 1
+    latitude: 34.061496
+    longitude: -117.811592
+    _scale: 1
+    align: 7
+    locked: 0
+    markerColliderRect:
+      serializedVersion: 2
+      x: -0.5
+      y: -0.5
+      width: 1
+      height: 1
+    texture: {fileID: 2800000, guid: ea7eb0aa8eaab054a91d4219f9719f63, type: 3}
+    _rotation: 0
+  - label: E2 Parking Lot
+    range:
+      max: 20
+      min: 3
+      maxLimit: 20
+      minLimit: 3
+    _enabled: 1
+    latitude: 34.060763
+    longitude: -117.812582
+    _scale: 1
+    align: 7
+    locked: 0
+    markerColliderRect:
+      serializedVersion: 2
+      x: -0.5
+      y: -0.5
+      width: 1
+      height: 1
+    texture: {fileID: 2800000, guid: ea7eb0aa8eaab054a91d4219f9719f63, type: 3}
+    _rotation: 0
+  - label: F1 Parking Lot
+    range:
+      max: 20
+      min: 3
+      maxLimit: 20
+      minLimit: 3
+    _enabled: 1
+    latitude: 34.062284
+    longitude: -117.816933
+    _scale: 1
+    align: 7
+    locked: 0
+    markerColliderRect:
+      serializedVersion: 2
+      x: -0.5
+      y: -0.5
+      width: 1
+      height: 1
+    texture: {fileID: 2800000, guid: ea7eb0aa8eaab054a91d4219f9719f63, type: 3}
+    _rotation: 0
+  - label: F2 Parking Lot
+    range:
+      max: 20
+      min: 3
+      maxLimit: 20
+      minLimit: 3
+    _enabled: 1
+    latitude: 34.061486
+    longitude: -117.817687
+    _scale: 1
+    align: 7
+    locked: 0
+    markerColliderRect:
+      serializedVersion: 2
+      x: -0.5
+      y: -0.5
+      width: 1
+      height: 1
+    texture: {fileID: 2800000, guid: ea7eb0aa8eaab054a91d4219f9719f63, type: 3}
+    _rotation: 0
+  - label: F3 Parking Lot
+    range:
+      max: 20
+      min: 3
+      maxLimit: 20
+      minLimit: 3
+    _enabled: 1
+    latitude: 34.062037
+    longitude: -117.816322
+    _scale: 1
+    align: 7
+    locked: 0
+    markerColliderRect:
+      serializedVersion: 2
+      x: -0.5
+      y: -0.5
+      width: 1
+      height: 1
+    texture: {fileID: 2800000, guid: ea7eb0aa8eaab054a91d4219f9719f63, type: 3}
+    _rotation: 0
+  - label: F4 Parking Lot
+    range:
+      max: 20
+      min: 3
+      maxLimit: 20
+      minLimit: 3
+    _enabled: 1
+    latitude: 34.060956
+    longitude: -117.8173
+    _scale: 1
+    align: 7
+    locked: 0
+    markerColliderRect:
+      serializedVersion: 2
+      x: -0.5
+      y: -0.5
+      width: 1
+      height: 1
+    texture: {fileID: 2800000, guid: ea7eb0aa8eaab054a91d4219f9719f63, type: 3}
+    _rotation: 0
+  - label: F5 Parking Lot
+    range:
+      max: 20
+      min: 3
+      maxLimit: 20
+      minLimit: 3
+    _enabled: 1
+    latitude: 34.061576
+    longitude: -117.815429
+    _scale: 1
+    align: 7
+    locked: 0
+    markerColliderRect:
+      serializedVersion: 2
+      x: -0.5
+      y: -0.5
+      width: 1
+      height: 1
+    texture: {fileID: 2800000, guid: ea7eb0aa8eaab054a91d4219f9719f63, type: 3}
+    _rotation: 0
+  - label: F8 Parking Lot
+    range:
+      max: 20
+      min: 3
+      maxLimit: 20
+      minLimit: 3
+    _enabled: 1
+    latitude: 34.059136
+    longitude: -117.817091
+    _scale: 1
+    align: 7
+    locked: 0
+    markerColliderRect:
+      serializedVersion: 2
+      x: -0.5
+      y: -0.5
+      width: 1
+      height: 1
+    texture: {fileID: 2800000, guid: ea7eb0aa8eaab054a91d4219f9719f63, type: 3}
+    _rotation: 0
+  - label: F9 Parking Lot
+    range:
+      max: 20
+      min: 3
+      maxLimit: 20
+      minLimit: 3
+    _enabled: 1
+    latitude: 34.060056
+    longitude: -117.815535
+    _scale: 1
+    align: 7
+    locked: 0
+    markerColliderRect:
+      serializedVersion: 2
+      x: -0.5
+      y: -0.5
+      width: 1
+      height: 1
+    texture: {fileID: 2800000, guid: ea7eb0aa8eaab054a91d4219f9719f63, type: 3}
+    _rotation: 0
+  - label: F10 Parking Lot
+    range:
+      max: 20
+      min: 3
+      maxLimit: 20
+      minLimit: 3
+    _enabled: 1
+    latitude: 34.061011
+    longitude: -117.814462
+    _scale: 1
+    align: 7
+    locked: 0
+    markerColliderRect:
+      serializedVersion: 2
+      x: -0.5
+      y: -0.5
+      width: 1
+      height: 1
+    texture: {fileID: 2800000, guid: ea7eb0aa8eaab054a91d4219f9719f63, type: 3}
+    _rotation: 0
+  - label: G Parking Lot
+    range:
+      max: 20
+      min: 3
+      maxLimit: 20
+      minLimit: 3
+    _enabled: 1
+    latitude: 34.055613
+    longitude: -117.819718
+    _scale: 1
+    align: 7
+    locked: 0
+    markerColliderRect:
+      serializedVersion: 2
+      x: -0.5
+      y: -0.5
+      width: 1
+      height: 1
+    texture: {fileID: 2800000, guid: ea7eb0aa8eaab054a91d4219f9719f63, type: 3}
+    _rotation: 0
+  - label: H Parking Lot
+    range:
+      max: 20
+      min: 3
+      maxLimit: 20
+      minLimit: 3
+    _enabled: 1
+    latitude: 34.06093
+    longitude: -117.818789
+    _scale: 1
+    align: 7
+    locked: 0
+    markerColliderRect:
+      serializedVersion: 2
+      x: -0.5
+      y: -0.5
+      width: 1
+      height: 1
+    texture: {fileID: 2800000, guid: ea7eb0aa8eaab054a91d4219f9719f63, type: 3}
+    _rotation: 0
+  - label: I Parking Lot
+    range:
+      max: 20
+      min: 3
+      maxLimit: 20
+      minLimit: 3
+    _enabled: 1
+    latitude: 34.048845
+    longitude: -117.819526
+    _scale: 1
+    align: 7
+    locked: 0
+    markerColliderRect:
+      serializedVersion: 2
+      x: -0.5
+      y: -0.5
+      width: 1
+      height: 1
+    texture: {fileID: 2800000, guid: ea7eb0aa8eaab054a91d4219f9719f63, type: 3}
+    _rotation: 0
+  - label: J Parking Lot
+    range:
+      max: 20
+      min: 3
+      maxLimit: 20
+      minLimit: 3
+    _enabled: 1
+    latitude: 34.057084
+    longitude: -117.828766
+    _scale: 1
+    align: 7
+    locked: 0
+    markerColliderRect:
+      serializedVersion: 2
+      x: -0.5
+      y: -0.5
+      width: 1
+      height: 1
+    texture: {fileID: 2800000, guid: ea7eb0aa8eaab054a91d4219f9719f63, type: 3}
+    _rotation: 0
+  - label: L Parking Lot
+    range:
+      max: 20
+      min: 3
+      maxLimit: 20
+      minLimit: 3
+    _enabled: 1
+    latitude: 34.055516
+    longitude: -117.825392
+    _scale: 1
+    align: 7
+    locked: 0
+    markerColliderRect:
+      serializedVersion: 2
+      x: -0.5
+      y: -0.5
+      width: 1
+      height: 1
+    texture: {fileID: 2800000, guid: ea7eb0aa8eaab054a91d4219f9719f63, type: 3}
+    _rotation: 0
+  - label: M Parking Lot
+    range:
+      max: 20
+      min: 3
+      maxLimit: 20
+      minLimit: 3
+    _enabled: 1
+    latitude: 34.055434
+    longitude: -117.829803
+    _scale: 1
+    align: 7
+    locked: 0
+    markerColliderRect:
+      serializedVersion: 2
+      x: -0.5
+      y: -0.5
+      width: 1
+      height: 1
+    texture: {fileID: 2800000, guid: ea7eb0aa8eaab054a91d4219f9719f63, type: 3}
+    _rotation: 0
+  - label: N Parking Lot
+    range:
+      max: 20
+      min: 3
+      maxLimit: 20
+      minLimit: 3
+    _enabled: 1
+    latitude: 34.056173
+    longitude: -117.818757
+    _scale: 1
+    align: 7
+    locked: 0
+    markerColliderRect:
+      serializedVersion: 2
+      x: -0.5
+      y: -0.5
+      width: 1
+      height: 1
+    texture: {fileID: 2800000, guid: ea7eb0aa8eaab054a91d4219f9719f63, type: 3}
+    _rotation: 0
+  - label: O Parking Lot
+    range:
+      max: 20
+      min: 3
+      maxLimit: 20
+      minLimit: 3
+    _enabled: 1
+    latitude: 34.049988
+    longitude: -117.814389
+    _scale: 1
+    align: 7
+    locked: 0
+    markerColliderRect:
+      serializedVersion: 2
+      x: -0.5
+      y: -0.5
+      width: 1
+      height: 1
+    texture: {fileID: 2800000, guid: ea7eb0aa8eaab054a91d4219f9719f63, type: 3}
+    _rotation: 0
+  - label: Overflow Parking Lot
+    range:
+      max: 20
+      min: 3
+      maxLimit: 20
+      minLimit: 3
+    _enabled: 1
+    latitude: 34.053185
+    longitude: -117.809444
+    _scale: 1
+    align: 7
+    locked: 0
+    markerColliderRect:
+      serializedVersion: 2
+      x: -0.5
+      y: -0.5
+      width: 1
+      height: 1
+    texture: {fileID: 2800000, guid: ea7eb0aa8eaab054a91d4219f9719f63, type: 3}
+    _rotation: 0
+  - label: P Parking Lot
+    range:
+      max: 20
+      min: 3
+      maxLimit: 20
+      minLimit: 3
+    _enabled: 1
+    latitude: 34.054464
+    longitude: -117.815443
+    _scale: 1
+    align: 7
+    locked: 0
+    markerColliderRect:
+      serializedVersion: 2
+      x: -0.5
+      y: -0.5
+      width: 1
+      height: 1
+    texture: {fileID: 2800000, guid: ea7eb0aa8eaab054a91d4219f9719f63, type: 3}
+    _rotation: 0
+  - label: Parking Structure
+    range:
+      max: 20
+      min: 3
+      maxLimit: 20
+      minLimit: 3
+    _enabled: 1
+    latitude: 34.060241
+    longitude: -117.816825
+    _scale: 1
+    align: 7
+    locked: 0
+    markerColliderRect:
+      serializedVersion: 2
+      x: -0.5
+      y: -0.5
+      width: 1
+      height: 1
+    texture: {fileID: 2800000, guid: ea7eb0aa8eaab054a91d4219f9719f63, type: 3}
+    _rotation: 0
+  - label: Parking Structure 2
+    range:
+      max: 20
+      min: 3
+      maxLimit: 20
+      minLimit: 3
+    _enabled: 1
+    latitude: 34.051845
+    longitude: -117.819771
+    _scale: 1
+    align: 7
+    locked: 0
+    markerColliderRect:
+      serializedVersion: 2
+      x: -0.5
+      y: -0.5
+      width: 1
+      height: 1
+    texture: {fileID: 2800000, guid: ea7eb0aa8eaab054a91d4219f9719f63, type: 3}
+    _rotation: 0
+  - label: Q Parking Lot
+    range:
+      max: 20
+      min: 3
+      maxLimit: 20
+      minLimit: 3
+    _enabled: 1
+    latitude: 34.055014
+    longitude: -117.817064
+    _scale: 1
+    align: 7
+    locked: 0
+    markerColliderRect:
+      serializedVersion: 2
+      x: -0.5
+      y: -0.5
+      width: 1
+      height: 1
+    texture: {fileID: 2800000, guid: ea7eb0aa8eaab054a91d4219f9719f63, type: 3}
+    _rotation: 0
+  - label: R Parking Lot
+    range:
+      max: 20
+      min: 3
+      maxLimit: 20
+      minLimit: 3
+    _enabled: 1
+    latitude: 34.063562
+    longitude: -117.825605
+    _scale: 1
+    align: 7
+    locked: 0
+    markerColliderRect:
+      serializedVersion: 2
+      x: -0.5
+      y: -0.5
+      width: 1
+      height: 1
+    texture: {fileID: 2800000, guid: ea7eb0aa8eaab054a91d4219f9719f63, type: 3}
+    _rotation: 0
+  - label: U Parking Lot
+    range:
+      max: 20
+      min: 3
+      maxLimit: 20
+      minLimit: 3
+    _enabled: 1
+    latitude: 34.048592
+    longitude: -117.817659
+    _scale: 1
+    align: 7
+    locked: 0
+    markerColliderRect:
+      serializedVersion: 2
+      x: -0.5
+      y: -0.5
+      width: 1
+      height: 1
+    texture: {fileID: 2800000, guid: ea7eb0aa8eaab054a91d4219f9719f63, type: 3}
+    _rotation: 0
+  - label: Unpaved Overflow Lot
+    range:
+      max: 20
+      min: 3
+      maxLimit: 20
+      minLimit: 3
+    _enabled: 1
+    latitude: 34.049637
+    longitude: -117.813616
+    _scale: 1
+    align: 7
+    locked: 0
+    markerColliderRect:
+      serializedVersion: 2
+      x: -0.5
+      y: -0.5
+      width: 1
+      height: 1
+    texture: {fileID: 2800000, guid: ea7eb0aa8eaab054a91d4219f9719f63, type: 3}
+    _rotation: 0
+  - label: Agriscapes Pumpkin Field
+    range:
+      max: 20
+      min: 3
+      maxLimit: 20
+      minLimit: 3
+    _enabled: 1
+    latitude: 34.049694
+    longitude: -117.818544
+    _scale: 1
+    align: 7
+    locked: 0
+    markerColliderRect:
+      serializedVersion: 2
+      x: -0.5
+      y: -0.5
+      width: 1
+      height: 1
+    texture: {fileID: 2800000, guid: ea7eb0aa8eaab054a91d4219f9719f63, type: 3}
+    _rotation: 0
+  - label: BioTrek Ethnobotany Garden
+    range:
+      max: 20
+      min: 3
+      maxLimit: 20
+      minLimit: 3
+    _enabled: 1
+    latitude: 34.049694
+    longitude: -117.818544
+    _scale: 1
+    align: 7
+    locked: 0
+    markerColliderRect:
+      serializedVersion: 2
+      x: -0.5
+      y: -0.5
+      width: 1
+      height: 1
+    texture: {fileID: 2800000, guid: ea7eb0aa8eaab054a91d4219f9719f63, type: 3}
+    _rotation: 0
+  - label: Bronco Commons
+    range:
+      max: 20
+      min: 3
+      maxLimit: 20
+      minLimit: 3
+    _enabled: 1
+    latitude: 34.055131
+    longitude: -117.820218
+    _scale: 1
+    align: 7
+    locked: 0
+    markerColliderRect:
+      serializedVersion: 2
+      x: -0.5
+      y: -0.5
+      width: 1
+      height: 1
+    texture: {fileID: 2800000, guid: ea7eb0aa8eaab054a91d4219f9719f63, type: 3}
+    _rotation: 0
+  - label: Engineering Meadow
+    range:
+      max: 20
+      min: 3
+      maxLimit: 20
+      minLimit: 3
+    _enabled: 1
+    latitude: 34.059097
+    longitude: -117.821394
+    _scale: 1
+    align: 7
+    locked: 0
+    markerColliderRect:
+      serializedVersion: 2
+      x: -0.5
+      y: -0.5
+      width: 1
+      height: 1
+    texture: {fileID: 2800000, guid: ea7eb0aa8eaab054a91d4219f9719f63, type: 3}
+    _rotation: 0
+  - label: Japanese Garden
+    range:
+      max: 20
+      min: 3
+      maxLimit: 20
+      minLimit: 3
+    _enabled: 1
+    latitude: 34.059924
+    longitude: -117.820392
+    _scale: 1
+    align: 7
+    locked: 0
+    markerColliderRect:
+      serializedVersion: 2
+      x: -0.5
+      y: -0.5
+      width: 1
+      height: 1
+    texture: {fileID: 2800000, guid: ea7eb0aa8eaab054a91d4219f9719f63, type: 3}
+    _rotation: 0
+  - label: Kellogg Track and Infield
+    range:
+      max: 20
+      min: 3
+      maxLimit: 20
+      minLimit: 3
+    _enabled: 1
+    latitude: 34.052297
+    longitude: -117.817029
+    _scale: 1
+    align: 7
+    locked: 0
+    markerColliderRect:
+      serializedVersion: 2
+      x: -0.5
+      y: -0.5
+      width: 1
+      height: 1
+    texture: {fileID: 2800000, guid: ea7eb0aa8eaab054a91d4219f9719f63, type: 3}
+    _rotation: 0
+  - label: Rose Garden
+    range:
+      max: 20
+      min: 3
+      maxLimit: 20
+      minLimit: 3
+    _enabled: 1
+    latitude: 34.060835
+    longitude: -117.820344
+    _scale: 1
+    align: 7
+    locked: 0
+    markerColliderRect:
+      serializedVersion: 2
+      x: -0.5
+      y: -0.5
+      width: 1
+      height: 1
+    texture: {fileID: 2800000, guid: ea7eb0aa8eaab054a91d4219f9719f63, type: 3}
+    _rotation: 0
+  - label: Scolinos Baseball Field
+    range:
+      max: 20
+      min: 3
+      maxLimit: 20
+      minLimit: 3
+    _enabled: 1
+    latitude: 34.053816
+    longitude: -117.815905
+    _scale: 1
+    align: 7
+    locked: 0
+    markerColliderRect:
+      serializedVersion: 2
+      x: -0.5
+      y: -0.5
+      width: 1
+      height: 1
+    texture: {fileID: 2800000, guid: ea7eb0aa8eaab054a91d4219f9719f63, type: 3}
+    _rotation: 0
+  - label: Soccer Field
+    range:
+      max: 20
+      min: 3
+      maxLimit: 20
+      minLimit: 3
+    _enabled: 1
+    latitude: 34.052775
+    longitude: -117.818505
+    _scale: 1
+    align: 7
+    locked: 0
+    markerColliderRect:
+      serializedVersion: 2
+      x: -0.5
+      y: -0.5
+      width: 1
+      height: 1
+    texture: {fileID: 2800000, guid: ea7eb0aa8eaab054a91d4219f9719f63, type: 3}
+    _rotation: 0
+  - label: Tennis Courts
+    range:
+      max: 20
+      min: 3
+      maxLimit: 20
+      minLimit: 3
+    _enabled: 1
+    latitude: 34.052853
+    longitude: -117.820336
+    _scale: 1
+    align: 7
+    locked: 0
+    markerColliderRect:
+      serializedVersion: 2
+      x: -0.5
+      y: -0.5
+      width: 1
+      height: 1
+    texture: {fileID: 2800000, guid: ea7eb0aa8eaab054a91d4219f9719f63, type: 3}
+    _rotation: 0
+  - label: University Park
+    range:
+      max: 20
+      min: 3
+      maxLimit: 20
+      minLimit: 3
+    _enabled: 1
+    latitude: 34.056695
+    longitude: -117.82099
+    _scale: 1
+    align: 7
+    locked: 0
+    markerColliderRect:
+      serializedVersion: 2
+      x: -0.5
+      y: -0.5
+      width: 1
+      height: 1
+    texture: {fileID: 2800000, guid: ea7eb0aa8eaab054a91d4219f9719f63, type: 3}
+    _rotation: 0
+  - label: University Quad
+    range:
+      max: 20
+      min: 3
+      maxLimit: 20
+      minLimit: 3
+    _enabled: 1
+    latitude: 34.058559
+    longitude: -117.823692
+    _scale: 1
+    align: 7
+    locked: 0
+    markerColliderRect:
+      serializedVersion: 2
+      x: -0.5
+      y: -0.5
+      width: 1
+      height: 1
+    texture: {fileID: 2800000, guid: ea7eb0aa8eaab054a91d4219f9719f63, type: 3}
+    _rotation: 0
+  - label: Voorhis Ecological Reserve
+    range:
+      max: 20
+      min: 3
+      maxLimit: 20
+      minLimit: 3
+    _enabled: 1
+    latitude: 34.060162
+    longitude: -117.82912
+    _scale: 1
+    align: 7
+    locked: 0
+    markerColliderRect:
+      serializedVersion: 2
+      x: -0.5
+      y: -0.5
+      width: 1
+      height: 1
+    texture: {fileID: 2800000, guid: ea7eb0aa8eaab054a91d4219f9719f63, type: 3}
+    _rotation: 0
+  - label: Voorhis Park
+    range:
+      max: 20
+      min: 3
+      maxLimit: 20
+      minLimit: 3
+    _enabled: 1
+    latitude: 34.059861
+    longitude: -117.818526
+    _scale: 1
+    align: 7
+    locked: 0
+    markerColliderRect:
+      serializedVersion: 2
+      x: -0.5
+      y: -0.5
+      width: 1
+      height: 1
+    texture: {fileID: 2800000, guid: ea7eb0aa8eaab054a91d4219f9719f63, type: 3}
+    _rotation: 0
+  needRedraw: 1
+  notInteractUnderGUI: 1
+  provider: 2
+  mapType: nokia.pedestrianday
+  redrawOnPlay: 0
+  renderInThread: 0
+  resourcesPath: OnlineMapsTiles/{zoom}/{x}/{y}
+  showMarkerTooltip: 0
+  smartTexture: {fileID: 0}
+  source: 0
+  stopPlayingWhenScriptsCompile: 1
+  target: 1
+  texture: {fileID: 0}
+  tilesetWidth: 1024
+  tilesetHeight: 1024
+  tilesetSize: {x: 1024, y: 1024}
+  tooltip: 
+  tooltipMarker:
+    label: 
+    range:
+      max: 20
+      min: 3
+      maxLimit: 20
+      minLimit: 3
+    _enabled: 1
+    latitude: 0
+    longitude: 0
+    _scale: 1
+  tooltipBackgroundTexture: {fileID: 2800000, guid: a8d1734e646100c4e83635fecf978e15,
+    type: 3}
+  traffic: 0
+  trafficProviderID: googlemaps
+  type: 0
+  useCurrentZoomTiles: 0
+  useSoftwareJPEGDecoder: 0
+  useSmartTexture: 1
+  useWebplayerProxy: 1
+  webplayerProxyURL: http://service.infinity-code.com/redirect.php?
+  width: 0
+  latitude: 34.057843
+  longitude: -117.821356
+  _zoom: 16
+  _activeTypeSettings: 09Anonymous225106App ID11008App Code110
+--- !u!114 &114818746587520692
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1548013295827826}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6cc007350cbc5de429b682da5e2f9e57, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  p:
+    label: 
+    range:
+      max: 20
+      min: 3
+      maxLimit: 20
+      minLimit: 3
+    _enabled: 1
+    latitude: 0
+    longitude: 0
+    _scale: 1
+    align: 7
+    locked: 0
+    markerColliderRect:
+      serializedVersion: 2
+      x: -0.5
+      y: -0.5
+      width: 1
+      height: 1
+    texture: {fileID: 0}
+    _rotation: 0
+--- !u!114 &114991924567370042
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1548013295827826}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0204ff7473a495c458dd4166a923837a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  appId: Gtzz6mPUpQnv6cFU0nFl
+  appCode: LQPheOZHqYOAuNOj9oClGA
